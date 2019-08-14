@@ -10,7 +10,15 @@ $('.fixed li').eq(index).css({
 	border: '1px solid orange'
 })
 $('.fixed li').eq(index).find('p').css({
-	background: 'orange'
+	background: 'orange',
+	transform: 'scale(1.2)'
+})
+
+//移入图标上下滑动
+$('.content_top>div ol li a').hover(function(){
+	$(this).addClass('jump')
+},function(){
+	$(this).removeClass('jump')
 })
 
 //点击楼层按钮
@@ -25,14 +33,18 @@ $(".fixed li").click(function(){
 //封装侧边栏公共的js
 function common(){
 	$('.fixed li').eq(index).css({
-		border: '1px solid orange'
+		border: '0.5px solid orange',
+		animation: 'border 0.5s'
 	}).siblings().css({
-		border: ''
+		border: '',
+		animation: ''
 	})
 	$('.fixed li').eq(index).find('p').css({
-		background: 'orange'
+		background: 'orange',
+		transform: 'scale(1.2)'
 	}).parent().siblings().find('p').css({
-		background: ''
+		background: '',
+		transform: ''
 	})
 	$('.fixed_content .num p').eq(0).find('span').html(index+1);
 }
