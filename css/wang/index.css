@@ -1,0 +1,74 @@
+body {
+	overflow: hidden;
+}
+/*内容区块样式开始*/
+.wrap ul,.wrap ul li {
+	height: 100%;
+}
+.wrap ul {
+	width: 100%;
+	position: absolute;
+	transition: 0.8s;
+	top: 0;
+}
+.wrap ul li {
+	position: relative;
+}
+/*内容区块样式结束*/
+/*右侧边栏样式开始*/
+@keyframes right{
+	from{
+		transform: translateX(200%);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+.fixed_content{
+	position: fixed;
+	top: 33%;
+	right: 35px;
+	height: 50%;
+	animation: right 1s linear;
+}
+.fixed li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	border: 1px solid transparent;
+	margin: 15px 0;
+	margin-left: 10px;
+}
+.fixed li:hover{
+	cursor: pointer;
+}
+.fixed li:hover p{
+	background: orange;
+}
+.fixed li p{
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: #33343c;
+}
+.num{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.num p:first-child{
+	color: orange;
+	font-size: 30px;
+}
+.num p:last-child{
+	color: #000;
+	font-size: 16px;
+	text-align: right;
+}
+.num p:last-child span{
+	border-top: 1px solid #000;
+}
+/*有侧边栏样式结束*/
