@@ -2,7 +2,6 @@ body,html{
 	width: 100%;
 	height: 100%;
 }
-
 .wrap{
 	position: relative;
 	width: 100%;
@@ -74,7 +73,7 @@ body,html{
 	}
 }
 .jump{
-	animation: jump 0.2s alternate infinite;
+	animation: jump 0.4s alternate infinite;
 }
 .content_top>div ol li a{
 	display: inline-block;

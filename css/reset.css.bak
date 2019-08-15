@@ -30,3 +30,5 @@ button,input,select,textarea{font-size:100%;}
 table{border-collapse:collapse;border-spacing:0;}
 
 .clearfix::after{content:"";display:block;clear:both;}
+
+.content{width:1200px;margin:0 auto;}
