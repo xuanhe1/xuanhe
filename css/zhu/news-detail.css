@@ -1,0 +1,83 @@
+body{
+	background: #f3f3f3;
+}
+.main{
+	width: 67vw;
+	margin: 0 auto;
+	padding: 65px 0 130px;
+}
+.title{
+	font-size: 16px;
+	color: #999;
+	margin-bottom: 38px;
+}
+
+.now,.title b{
+	font-weight: normal;
+	color: #7C4E23;
+}
+
+.title a:hover{
+	color: #7C4E23;
+}
+.main p:nth-child(2){
+	color: #7C4E23;
+}
+.main p:nth-child(3){
+	color: #666;
+}
+.main h1{
+	font-size: 43px;
+	font-weight: normal;
+	margin: 15px 0 50px;
+}
+.hr{
+	width: 100%;
+	height: 2px;
+	background: #999;
+}
+.main-content{
+	width: 70%;
+	margin: 45px auto 0;
+}
+.main .main-content p{
+	font-size: 16px;
+	color: #666;
+	text-indent: 2em;
+}
+.main .main-content img{
+	width: 100%;
+	display: block;
+	margin: 40px 0;
+}
+
+/* 导航栏部分 */
+.box{
+		position: inherit;
+		height:60px;
+		display: block;
+	}
+	.logo{
+		width:120px;
+		height:60%;
+		float:left;
+		margin-top:10px;
+	}
+	.box2{
+		width:50%;
+		height:100%;
+		float:left;
+		margin-left:10%;
+	}
+	@keyframes jump{
+		from{
+			transform: translateY(0);
+		}
+		to{
+			transform: translateY(-15%);
+		}
+	}
+	.jump{
+		animation: jump 0.2s alternate infinite;
+	}
+	/* 导航栏部分 */

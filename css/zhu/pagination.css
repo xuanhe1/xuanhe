@@ -1,0 +1,28 @@
+#wrap1{
+		background: #f3f3f3;
+		height: 120px;
+		font-size: 16px;
+		line-height: 36px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: bold;
+	}
+	.pagination-wrap{
+		display: flex;
+	}
+	.pagination-btn{
+		width: 3vw;
+		height: 3vw;
+		border:1px solid #1a1e2a;
+	}
+	.pagination-current{
+	    
+	    color:#7C4E23;
+	}
+	.pagination-wrap li.pagination-btn{
+		width: 3vw;
+		height: 3vw;
+		border:none;
+	}
+	
