@@ -30,6 +30,14 @@ $(".fixed li").click(function(){
 	//调用公共的侧边栏js
 	common();
 })
+
+//返回顶部
+$('.top').click(function(){
+	$('body,html').stop().animate({
+		scrollTop: 0
+	})
+})
+
 //封装侧边栏公共的js
 function common(){
 	$('.fixed li').eq(index).css({
@@ -71,6 +79,13 @@ function wheel(e) {
 		}else if(index>4){
 			index = 4;
 		}
+		
+		if(index > 0){
+			$('.box').fadeIn();
+		}else{
+			$('.box').fadeOut();
+		}
+		
 		//调用公共的侧边栏js
 		common()
 		//滚轮事件改变ul的top值
