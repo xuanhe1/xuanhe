@@ -1,0 +1,98 @@
+
+.box{
+		width:90%;
+		height:60px;
+		margin:0 auto;
+	}
+	.logo{
+		width:120px;
+		height:60%;
+		float:left;
+		margin-top:10px;
+	}
+	.box2{
+		width:50%;
+		height:100%;
+		float:left;
+		margin-left:10%;
+	}
+	.box2 li{
+		float:left;
+		line-height:60px;
+		color:#666666;
+		font-size:16px;
+		width:20%;
+		text-align:center;
+	}
+	.box2 li:hover{
+		color:#fff;
+		background:#d4c587;
+	}
+	.box3{
+		width:10%;
+		height:100%;
+		float:right;
+	}
+	.box3 li{
+		width:30%;
+		height:100%;
+		line-height:60px;
+		text-align:center;
+		float:right;
+	}
+	.box3 li a i{
+		color: #000;
+		font-size:24px;
+	}
+	@keyframes jump{
+		from{
+			transform: translateY(0);
+		}
+		to{
+			transform: translateY(-15%);
+		}
+	}
+	.jump{
+		animation: jump 0.2s alternate infinite;
+	}
+/* banner开始 */
+.banner{width:100%;height: 110px;min-width:1220px;}
+.banner>div{width:100%;height:100%;position: relative;}
+.banner>div>img{width:100%;height:100%}
+.banner>div>div{width:100%;height:100%;position:absolute;top:0;left:0;background:rgba(0,0,0,.1);color:#fffefe;text-align: center;}
+.banner>div>div>p{font-size:16px;margin-top:30px;}
+.banner>div>div>span{font-size:16px;}
+/* banner结束 */
+/* 主体部分开始 */
+.main{width:100%;background:#f3f3f3;padding:40px 0;}
+.main>div{width:84vw;margin:auto;overflow: hidden;min-width:1220px;/* padding:0 7vw; */}
+/* 上面切换按钮 */
+.main>div>.check-btn{width:55%;margin:auto;font-size:16px;color:#999;display: flex;justify-content: space-around;padding-top:7px;line-height:10px;margin-bottom:30px;}
+.main>div>.check-btn>li{padding:8px;}
+.main>div>.check-btn:first-child li{margin-left:30px;}
+.main>div>.check-btn li.active{padding:8px 10px;background:#7c4e23;color:#fff;border-radius:15px;}
+/* 切换的内容 */
+.main>div>.check-content{width:84vw;min-width:1220px;display: flex;}
+.main>div>.check-content>ol{width:100%;display: flex;justify-content: space-between;backgrund:red}
+.main>div>.check-content>ol>li{width:22.3%;}
+.main>div>.check-content>ol>li>.top{width:100%;overflow: hidden;}
+.main>div>.check-content>ol>li>.top>img{width:100%;transition: 0.8s;display:block;}
+.main>div>.check-content>ol>li:hover .top>img{transform: scale(1.2);transition:0.8s;}
+.main>div>.check-content>ol>li>.bottom{padding:20px;background:#fff;width:85%}
+.main>div>.check-content>ol>li>.bottom>h5{font-size:14px;margin-bottom:7px;color:#444;}
+.main>div>.check-content>ol>li>.bottom>span{fon-size:13px;color:#666;}
+.main>div>.check-content>ol>li>.bottom>.line{width:10px;height:2px;background:#7c4e23;transition:0.8s}
+.main>div>.check-content>ol>li:hover .bottom>.line{width:50px;transition:0.8s}
+.main>div>.check-content>ol>li>.bottom>.text{font-size:12px;margin-top:7px;color:#666666;}
+.main>div>.check-content>ol>li>.bottom>div{width:50px;padding:3px 5px;border:1px solid #7c4e23;display: flex;justify-content: space-around;border-radius: 15px;margin-top:6px;margin-left:160px;cursor: pointer;}
+.main>div>.check-content>ol>li>.bottom>div>.san{width:0;height: 0;border:5px solid transparent;border-left:5px solid #7c4e23;margin-top:4px;}
+.main>div>.check-content>ol>li>.bottom>div:hover{background:#774b21;color:#fff;}
+.main>div>.check-content>ol>li>.bottom>div:hover .san{width:0;height: 0;border-left:5px solid #fff;}
+/* 分页器 */
+.main .page{width:30%;display: flex;margin:30px auto;}
+.main .page>a{display: block;font-size:20px;padding:7px;}
+.main .page span{padding:7px;}
+.main .page>a:first-child{padding:7px 12px;border:1px solid #000}
+.main .page>a:last-child{padding:7px 12px;border:1px solid #000}
+/* 主体部分结束 */
+footer{width:100%}
