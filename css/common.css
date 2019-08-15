@@ -9,6 +9,7 @@
 	padding: 0 5vw;
 	background: #fff;
 	box-sizing: border-box;
+	z-index: 999;
 }
 .logo{
 	float:left;

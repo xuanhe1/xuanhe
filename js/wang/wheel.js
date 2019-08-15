@@ -13,6 +13,16 @@ $('.fixed li').eq(index).find('p').css({
 	background: 'orange',
 	transform: 'scale(1.2)'
 })
+$('.content_top').addClass('cTop');
+$('.one-content').addClass('mobile');
+$('.w-content .line p').addClass('oP');
+$('.home .nav').addClass('oNav');
+
+
+$('.content_top').addClass('cTop');
+$('.listMenu>ul>li').eq(0).children('a').addClass('oTop');
+$('.listMenu>ul>li').eq(0).find('a img').addClass('big');
+$('.listMenu>ul>li').eq(0).find('.list_none').addClass('transY');
 
 //移入图标上下滑动
 $('.content_top>div ol li a').hover(function(){
@@ -29,6 +39,9 @@ $(".fixed li").click(function(){
 	index = count;
 	//调用公共的侧边栏js
 	common();
+	//调用滑动点击事件
+	slide(count);
+	
 })
 
 //返回顶部
@@ -57,6 +70,53 @@ function common(){
 	$('.fixed_content .num p').eq(0).find('span').html(index+1);
 }
 
+/*滑动点击事件*/
+function slide(num){
+	//导航淡隐淡出
+	if(num > 0){
+		$('.box').fadeIn();
+	}else{
+		$('.box').fadeOut();
+	}
+	/*关于煊赫的动画*/
+	if(num == 1){
+		$('.about>.img>img').addClass('nImg')
+		$('.about>img').addClass('aImg')
+		$('.about>.img>.text h1').addClass('nH1')
+		$('.about>.img>.text p span').addClass('oSpan')
+		$('.about>.img>.text button').addClass('opacity')
+	}
+	/*产品列表的动画*/
+	if(num == 2){
+		$('.listMenu').addClass('oMenu')
+	}
+	//新闻中心动画
+	if(num == 3){
+		$('.News>img').addClass('animated fadeInDown delay-1s');
+		$('.news-left>img').addClass('animated fadeInUp delay-1s');
+		$('.news-left h1,.news-left h2,.news-left h3').addClass('animated fadeInLeft delay-1s');
+		$('.news-right').addClass('animated fadeInRight delay-1s');
+		$('.news-left>p>span').addClass('animated fadeInUp delay-2s');
+		$('.title .left').addClass('animated fadeInLeft delay-2s');
+		$('.title .right').addClass('animated fadeInRight delay-2s');
+		$('.news-right p span').addClass('animated fadeInUp delay-2s');
+		$('.news-left>a').addClass('animated fadeIn delay-2s');
+		$('.mask').addClass('oMask');
+	}
+}
+
+/*第三模块的点击事件*/
+click()
+function click(){
+	$('.listMenu>ul>li').click(function(){
+		$(this).css('width','40%').siblings().css('width','25%');
+		$(this).find('a img').addClass('big').removeClass('big1').parent().parent().siblings().find('a img').addClass('big1').removeClass('big');
+		$(this).children('a').addClass('oTop').removeClass('oBottom').parent().siblings().children('a').addClass('oBottom').removeClass('oTop');
+		$(this).find('.list_none').addClass('transY').removeClass('ntransY').parent().siblings().find('.list_none').addClass('ntransY').removeClass('transY');
+	})
+}
+
+
 function wheel(e) {
 	var now = new Date();
 	var e = e || window.event;
@@ -79,15 +139,10 @@ function wheel(e) {
 		}else if(index>4){
 			index = 4;
 		}
-		
-		if(index > 0){
-			$('.box').fadeIn();
-		}else{
-			$('.box').fadeOut();
-		}
-		
+		/*调用滑动点击事件*/
+		slide(index);
 		//调用公共的侧边栏js
-		common()
+		common();
 		//滚轮事件改变ul的top值
 		ul.style.top = -100 * index + "%"
 		then = new Date();
