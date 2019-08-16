@@ -31,6 +31,12 @@ $('.content_top>div ol li a').hover(function(){
 	$(this).removeClass('jump')
 })
 
+$('.box3 li a').hover(function(){
+	$(this).addClass('jump');
+},function(){
+	$(this).removeClass('jump');
+})
+
 //点击楼层按钮
 $(".fixed li").click(function(){
 	var count = $(this).index();
@@ -93,7 +99,7 @@ function slide(num){
 	//新闻中心动画
 	if(num == 3){
 		$('.News>img').addClass('animated fadeInDown delay-1s');
-		$('.news-left>img').addClass('animated fadeInUp delay-1s');
+		$('.news-left img').addClass('animated fadeInUp delay-1s');
 		$('.news-left h1,.news-left h2,.news-left h3').addClass('animated fadeInLeft delay-1s');
 		$('.news-right').addClass('animated fadeInRight delay-1s');
 		$('.news-left>p>span').addClass('animated fadeInUp delay-2s');
@@ -102,6 +108,11 @@ function slide(num){
 		$('.news-right p span').addClass('animated fadeInUp delay-2s');
 		$('.news-left>a').addClass('animated fadeIn delay-2s');
 		$('.mask').addClass('oMask');
+	}
+	//联系我们动画
+	if(num == 4){
+		$('.contactUs>.us-content>.usLeft').addClass('animated fadeInLeft');
+		$('.contactUs>.us-content>.usRight').addClass('usOpacity');
 	}
 }
 
