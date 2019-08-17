@@ -119,7 +119,7 @@
 		width:18vw;
 		height:2vh;
 		color:#828282;
-		font-size:1.3vw;
+		font-size:1.2vw;
 		margin-top:1.5vh;
 		margin-left:3vw;
 	}

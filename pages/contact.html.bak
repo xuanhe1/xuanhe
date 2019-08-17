@@ -9,11 +9,7 @@
   <link rel="stylesheet" href="../fonts/iconfont.css">
   <link rel="stylesheet" href="../css/animate.css" />
   <style type="text/css">
-	#allMap{
-		width:100vw;
-		height:70vh;
-		margin:0 auto;
-	}
+
   </style>
  </head>
  <body>
@@ -98,7 +94,7 @@
  <script type="text/javascript" src="../js/public.js"></script>
  <script type="text/javascript" 
  src="http://api.map.baidu.com/api?v=2.0&ak=Tsysj1oxCFHwq527G3H58C7gydhFeLhU"></script>
- <!-- <script type="text/javascript">
+ <script type="text/javascript">
  		window.onload=function(){
  				// 百度地图API功能
  			
@@ -127,5 +123,5 @@
  
  			})
  		}
- </script> -->
+ </script>
 </html>

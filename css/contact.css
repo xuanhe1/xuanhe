@@ -125,7 +125,11 @@
 	}
 
 
-
+	#allMap{
+		width:100vw;
+		height:70vh;
+		margin:0 auto;
+	}
 
 
 
