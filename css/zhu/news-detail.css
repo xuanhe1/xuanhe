@@ -1,15 +1,16 @@
 body{
 	background: #f3f3f3;
+	font-size: 1vw;
 }
 .main{
 	width: 67vw;
 	margin: 0 auto;
-	padding: 65px 0 130px;
+	padding: 8.4vh 0 16.92vh;
 }
 .title{
-	font-size: 16px;
+	font-size: 1.17vw;
 	color: #999;
-	margin-bottom: 38px;
+	margin-bottom: 4.94vh;
 }
 
 .now,.title b{
@@ -27,28 +28,28 @@ body{
 	color: #666;
 }
 .main h1{
-	font-size: 43px;
+	font-size: 3.14vw;
 	font-weight: normal;
-	margin: 15px 0 50px;
+	margin: 1.95vh 0 6.5vh;
 }
 .hr{
 	width: 100%;
-	height: 2px;
+	height: 0.2vh;
 	background: #999;
 }
 .main-content{
 	width: 70%;
-	margin: 45px auto 0;
+	margin: 5.8vh auto 0;
 }
 .main .main-content p{
-	font-size: 16px;
+	font-size: 1.17vw;
 	color: #666;
 	text-indent: 2em;
 }
 .main .main-content img{
 	width: 100%;
 	display: block;
-	margin: 40px 0;
+	margin: 5.2vh 0;
 }
 
 /* 导航栏部分 */

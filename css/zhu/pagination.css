@@ -1,12 +1,16 @@
 #wrap1{
+		width: 100vw;
 		background: #f3f3f3;
-		height: 120px;
-		font-size: 16px;
-		line-height: 36px;
+		height: 5vw;
+		font-size: 1.17vw;
+		line-height: 3vw;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		font-weight: bold;
+		position: absolute;
+		bottom: 2vw;
+		
 	}
 	.pagination-wrap{
 		display: flex;
@@ -15,6 +19,7 @@
 		width: 3vw;
 		height: 3vw;
 		border:1px solid #1a1e2a;
+		text-align: center;
 	}
 	.pagination-current{
 	    

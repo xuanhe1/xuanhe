@@ -30,12 +30,12 @@
 	</div>
 
 		<!-- 公共导航 -->
-		<img class="banner" src="../img/zhu/banner.png" >
+		<img class="banner" src="../img/zhu/banner1.png" >
 		<div class="main">
 			<p class="tab"><span class="tabon tabson">公司新闻</span><span class="tabson">行业动态</span></p>
 			<div class="list">
 				<div class="main-top">
-					<div class="headImg"><img class="headimg" src="../img/zhu/headimg.png" ></div>
+					<div class="headImg"><img class="headimg" src="../img/zhu/headimg1.png" ></div>
 					
 					<div class="main-top-right">
 						<p class="main-top-title">煊赫公司、泰橡集团达成战略合作伙伴关系共同改革发展</p>
@@ -49,7 +49,7 @@
 				</div>
 				<div class="main-bottom">
 					<div class="p_list_box clearfix">
-						<ul class="p_list">
+						<!-- <ul class="p_list">
 							<li>
 								<div class="p_list_headImg">
 									<img class="listImg" src="../img/zhu/1.png" >
@@ -61,89 +61,13 @@
 									<p>智能家居和普通家居究竟有何不同？近两年全球正在悄悄的燃起一场智能化的革命..</p>
 									<a class="more">&nbsp;MORE<div class="san"></div></a>
 								</div>
-								
 							</li>
-							<li>
-								<div class="p_list_headImg">
-									<img class="listImg" src="../img/zhu/2.png" >
-								</div>
-								<div class="p_list_content">
-									<h3>智能科技</h3>
-									<p>2019-08-22</p>
-									<span class="slider"></span>
-									<p>智能家居和普通家居究竟有何不同？近两年全球正在悄悄的燃起一场智能化的革命..</p>
-									<a class="more">&nbsp;MORE<div class="san"></div></a>
-								</div>
-								
-							</li>
-							<li>
-								<div class="p_list_headImg">
-									<img class="listImg" src="../img/zhu/3.png" >
-								</div>
-								<div class="p_list_content">
-									<h3>智能科技</h3>
-									<p>2019-08-22</p>
-									<span class="slider"></span>
-									<p>智能家居和普通家居究竟有何不同？近两年全球正在悄悄的燃起一场智能化的革命..</p>
-									<a class="more">&nbsp;MORE<div class="san"></div></a>
-								</div>
-								
-							</li>
-							<li>
-								<div class="p_list_headImg">
-									<img class="listImg" src="../img/zhu/4.png" >
-								</div>
-								<div class="p_list_content">
-									<h3>智能科技</h3>
-									<p>2019-08-22</p>
-									<span class="slider"></span>
-									<p>智能家居和普通家居究竟有何不同？近两年全球正在悄悄的燃起一场智能化的革命..</p>
-									<a class="more">&nbsp;MORE<div class="san"></div></a>
-								</div>
-								
-							</li>
-							<li>
-								<div class="p_list_headImg">
-									<img class="listImg" src="../img/zhu/5.png" >
-								</div>
-								<div class="p_list_content">
-									<h3>智能科技</h3>
-									<p>2019-08-22</p>
-									<span class="slider"></span>
-									<p>智能家居和普通家居究竟有何不同？近两年全球正在悄悄的燃起一场智能化的革命..</p>
-									<a class="more">&nbsp;MORE<div class="san"></div></a>
-								</div>
-								
-							</li>
-							<li>
-								<div class="p_list_headImg">
-									<img class="listImg" src="../img/zhu/6.png" >
-								</div>
-								<div class="p_list_content">
-									<h3>智能科技</h3>
-									<p>2019-08-22</p>
-									<span class="slider"></span>
-									<p>智能家居和普通家居究竟有何不同？近两年全球正在悄悄的燃起一场智能化的革命..</p>
-									<a class="more">&nbsp;MORE<div class="san"></div></a>
-								</div>
-								
-							</li>
-						</ul>
-					
-					
+						</ul> -->
 					</div>
-						
-					
-					
+					<!-- 分页器 -->
+					<div id="wrap1"></div>
 				</div>
-				
-				<!-- 分页器 -->
-				
-				<center>
-				<div id="wrap1"></div>
-				</center>
 			</div>
-			
 		</div>
 		<footer>
 			<div class="footer_left">
@@ -178,23 +102,4 @@
 	<script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="../js/zhu/pagination.js"></script>
 	<script src="../js/zhu/news.js"></script>
-	<script type="text/javascript">
-		var onPagechange = function(page){
-			console.log('当前点击页码',page);
-			$(".main-bottom .p_list_box").animate({left:(page-1)*-100+"vw"})
-		
-		}
-		var obj = {
-			wrapid:'wrap1', //页面显示分页器容器id
-			total:90,//总条数
-			pagesize:6,//每页显示10条
-			currentPage:1,//当前页
-			onPagechange:onPagechange,
-			btnCount:3 //页数过多时，显示省略号的边界页码按钮数量
-		}
-		pagination.init(obj);
-		
-		
-		
-	</script>
 </html>
