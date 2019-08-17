@@ -1,9 +1,3 @@
-/*
-* @Author: wuna
-* @Date:   2018-07-09 15:13:30
-* @Last Modified by:   wuna
-* @Last Modified time: 2018-07-09 16:39:05
-*/
 var pagination = pagination || {};
 (function(){
     function Pagination(){
@@ -33,10 +27,15 @@ var pagination = pagination || {};
 			
         },
         bindEvent: function(){
-            var that = this;
+			var that = this;
+			$(".tabson").click(function(){
+				that._currentPage=1
+			})
+			
+            
             /*页码点击*/
             $(that._wrapid).on('click','.pagenum',function(){
-                that._currentPage = parseInt($(this).text());
+                that._currentPage = parseInt($(this).attr("data-num"))
                 that._cb(that._currentPage);
                 isshowMore.call(that);
             });
@@ -46,6 +45,7 @@ var pagination = pagination || {};
                 if($(this).hasClass('pagination-disabled')){
                     return;
                 }
+				
                 that._currentPage--;
                 $('#pagination-next').hasClass('pagination-disabled')&&$('#pagination-next').removeClass('pagination-disabled');
                 if(that._currentPage==1){
