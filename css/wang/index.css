@@ -43,7 +43,6 @@ body,html{
 .logo{
 	float:left;
 	width: 7vw;
-	height: 6vh;
 	margin-top: 2vh;
 }
 .box2{
@@ -54,9 +53,8 @@ body,html{
 }
 .box2 li{
 	float:left;
-	line-height:60px;
 	color:#666;
-	font-size:16px;
+	font-size: 1.2vw;
 	width:20%;
 	height: 100%;
 	text-align:center;
@@ -68,6 +66,13 @@ body,html{
 .box2 li:first-child{
 	color: #fff;
 	background:#d4c587;
+}
+.box2 li a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
 }
 .box3{
 	float:right;
@@ -82,11 +87,15 @@ body,html{
 	text-align:center;
 }
 .box3 li a{
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
 }
 .box3 li a i{
 	color: #000;
-	font-size: 24px;
+	font-size: 1.5vw;
 }
 /*公共导航*/
 
@@ -121,7 +130,6 @@ body,html{
 }
 .content_top>div img{
 	width: 7vw;
-	height: 6vh;
 }
 .content_top>div ol{
 	display: flex;
@@ -151,7 +159,7 @@ body,html{
 }
 .content_top>div ol li a i{
 	color: #fff;
-	font-size: 25px;
+	font-size: 1.5vw;
 }
 /*首页头样式结束*/
 
@@ -174,7 +182,8 @@ body,html{
 	right: 0;
 	top: 25vh;
 	width: 45%;
-	padding: 28px 0 28px 65px;
+	height: 50%;
+	padding: 28px 0px 0px 65px;
 	box-sizing: border-box;
 	background: rgba(0,0,0,.5);
 	transition: all 2s;
@@ -187,7 +196,7 @@ body,html{
 	display: flex;
 }
 .one-content .w-content ul li{
-	padding-right: 70px;
+	padding-right: 2vw;
 	box-sizing: border-box;                           
 }
 .one-content .w-content ul li:last-child{
@@ -198,27 +207,24 @@ body,html{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	font-size: 1.2vw;
 }
 .one-content .w-content ul li a i{
-	font-size: 30px;
-}
-.one-content .w-content .line{
-	padding: 0 20px;
-	padding-left: 0;
-	box-sizing: border-box;
+	font-size: 3vw;
 }
 .one-content .w-content .line h1{
-	font-size: 48px;
-	letter-spacing: 2px;
-	padding: 14px 0;
+	font-size: 3.4vw;
+	font-weight: 200;
+	padding: 1vw 0;
 	box-sizing: border-box;
+	letter-spacing: 2px;
 }
 @keyframes oP{
 	from{
 		width: 0;
 	}
 	to{
-		width: 98%;
+		width: 90%;
 	}
 }
 .oP{
@@ -234,20 +240,19 @@ body,html{
 }
 .one-content .w-content .line span{
 	display: inline-block;
-	font-size: 16px;
-	line-height: 30px;
+	font-size: 1.2vw;
+	line-height: 1.9vw;
 	letter-spacing: 2px;
 	padding: 5px 0px;
 	padding-top: 18px;
 	box-sizing: border-box;
 }
 .one-content .w-content button{
-	width: 120px;
-	height: 38px;
 	color: #fff;
 	font-size: 14px;
-	border: 0;
-	outline: none;
+	padding: 1vh 1vw;
+	margin-top: 1vh;
+	box-sizing: border-box;
 	border-radius: 38px;
 	background: rgb(124, 78, 35);
 }
@@ -285,6 +290,7 @@ body,html{
 .home .nav ul li{
 	float: left;
 	width: 20%;
+	font-size: 1vw;
 	text-align: center;
 	line-height: 10vh;
 }
@@ -306,15 +312,14 @@ body,html{
 .about{
 	position: relative;
 	width: 100%;
-	height: 90%;
-	padding: 17.5vh 0 4.3vh 5.6vw;
-	box-sizing: border-box;
+	height: 100%;
 	z-index: 2;
 }
 .about .img{
 	display: flex;
+	width: 86%;
 	height: 100%;
-	border-radius: 10px;
+	margin: 0 auto;
 }
 @keyframes img{
 	from{
@@ -329,16 +334,17 @@ body,html{
 }
 .about>.img>img{
 	height: 80%;
+	margin-top: 15vh;
+	border-radius: 10px;
 }
 .about>.img>img:hover{
 	box-shadow: 0 0 10px #000;
-	transition: all 1s linear;
 }
 .about>.img>.text{
 	display: flex;
 	flex-direction: column;
 	width: 35vw;
-	padding-top: 1vh;
+	padding-top: 17.5vh;
 	padding-left: 4.2vw;
 	box-sizing: border-box;
 }
@@ -353,10 +359,18 @@ body,html{
 .nH1{
 	animation: nH 1.5s forwards;
 }
-.about>.img>.text h1{
-	font-size: 60px;
-	color: #7c4e23;
-	font-weight: 400;
+.about>.img>.text img{
+	display: inline-block;
+	width: 100%;
+}
+.about>.img>.text .img1{
+	padding-top: 6vh;
+	box-sizing: border-box;
+}
+.about>.img>.text .img2{
+	width: 50%;
+	padding-top: 4vh;
+	box-sizing: border-box;
 }
 .about>.img>.text p{
 	margin: 3.3vh 0;
@@ -375,9 +389,9 @@ body,html{
 }
 .about>.img>.text p span{
 	display: inline-block;
-	font-size: 14px;
+	font-size: 1.2vw;
 	color: #999;
-	line-height: 20px;
+	line-height: 1.5vw;
 }
 @keyframes opacity{
 	from{
@@ -393,13 +407,13 @@ body,html{
 }
 
 .about>.img>.text button{
-	width: 9.6vw;
-	padding: 2.8vh 3.3vw;
+	width: 8.6vw;
+	padding: 1.5vw 0;
 	background: #7C4E23;
 	color: #fff;
 	font-size: 14px;
 	box-sizing: border-box;
-	border-radius: 30px;
+	border-radius: 50px;
 }
 @keyframes aImg{
 	from{
@@ -424,8 +438,6 @@ body,html{
 .listMenu{
 	width: 100%;
 	height: 90%;
-	padding-top: 10vh;
-	box-sizing: border-box;
 }
 @keyframes oMenu{
 	from{
@@ -442,6 +454,8 @@ body,html{
 	display: flex;
 	width: 100%;
 	height: 100%;
+	padding-top: 10vh;
+	box-sizing: border-box;
 }
 .listMenu>ul>li{
 	position: relative;
@@ -469,7 +483,7 @@ body,html{
 	transform: translateY(0);
 }
 .listMenu>ul>li>a h3{
-	font-size: 30px;
+	font-size: 2vw;
 	color: #fff;
 	font-weight: 400;
 	padding-bottom: 1.2vh;
@@ -504,7 +518,13 @@ body,html{
 	width: 100%;
 	height: 31vh;
 	background: #e2e2e2;
-	transition: all .5s linear;
+	transition: all 1s linear;
+}
+.transY{
+	bottom:0;
+}
+.ntransY{
+	bottom:-100%;
 }
 .listMenu>ul>li>.list_none>div{
 	display: flex;
@@ -513,25 +533,17 @@ body,html{
 	height: 100%;
 	margin: 0 auto;
 }
-.transY{
-	bottom:0;
-}
-.ntransY{
-	bottom:-100%;
-}
 .listMenu>ul>li>.list_none>div .none_top{
 	position: absolute;
-	top: -60px;
+	top: -5vw;
 }
 .listMenu>ul>li>.list_none>div .none_top p{
-	font-size: 50px;
-	line-height: 50px;
+	font-size: 3vw;
 	color: #7C4E23;
 }
 
 .listMenu>ul>li>.list_none>div .none_bottom p{
-	font-size: 30px;
-	line-height:30px;
+	font-size: 2vw;
 	color: #7C4E23;
 }
 .listMenu>ul>li>.list_none>div .none_bottom a{
@@ -546,51 +558,55 @@ body,html{
 /*产品中心样式结束*/
 /*新闻中心样式开始*/
 .News{
-	padding: 14vh 6.4vw 0;
+	width: 100%;
+	height: 90%;
+}
+.News .content1{
+	padding: 17.5vh 6.4vw 0;
 	box-sizing: border-box;
 }
-.News>img{
+.News .content1>img{
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 2vh;
 	width: 100vw;
 	height: 24vh;
 	margin: 0 50px;
 }
-.News>.news_content{
+.News .content1 .news_content{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	width: 100%;
 	height: 100%;
 }
-.News>.news_content>.news-left{
+.News .content1 .news_content>.news-left{
 	width: 35.5vw;
 	height: 52.7vh;
+	padding-top: 3vh;
+	box-sizing: border-box;
 }
-.News>.news_content>.news-left h1{
-	font-size: 70px;
-	line-height: 70px;
-	color: #7C4E23;
-	font-weight: 200;
+.News .content1 .news_content>.news-left img{
+	display: block;
 }
-.News>.news_content>.news-left h2{
-	font-size: 50px;
-	line-height: 70px;
-	color: #7C4E23;
-	font-weight: 200;
+.News .content1 .news_content>.news-left .img1{
+	width: 50%;
+	margin-top: 4vh;
 }
-.News>.news_content>.news-left h3{
-	font-size: 40px;
-	line-height: 40px;
-	color: #7C4E23;
-	font-weight: 400;
+.News .content1 .news_content>.news-left .img2{
+	width: 40%;
+	margin-top: 5vh;
 }
-.News>.news_content>.news-left p{
+.News .content1 .news_content>.news-left p{
 	margin: 3.3vh 0;
 	overflow: hidden;
 }
-.News>.news_content>.news-left>a{
+.News .content1 .news_content>.news-left>p span{
+	display: inline-block;
+	font-size: 1.2vw;
+	color: #999;
+	line-height: 1.4vw;
+}
+.News .content1 .news_content>.news-left>a{
 	display: inline-block;
 	color: #fff;
 	text-align: center;
@@ -600,31 +616,25 @@ body,html{
 	margin-bottom: 8vh;
 	box-sizing: border-box;
 }
-.News>.news_content>.news-left>p span{
-	display: inline-block;
-	font-size: 14px;
-	color: #999;
-	line-height: 20px;
-}
-.News>.news_content>.news-left>.img1{
+.News .content1 .news_content>.news-left>.img3{
 	display: block;
 	width: 3.5vw;
-	height: 6.8vh;
 }
-.News>.news_content>.news-left>.img2{
+.News .content1 .news_content>.news-left>.img4{
 	display: inline-block;
 	float: left;
 	width: 35vw;
-	height: 0.2vh;
 	margin-left: 6vw;
 }
-.News>.news_content>.news-right{
+.News .content1 .news_content>.news-right{
 	position: relative;
 	width: 45.6vw;
-	height: 62vh;
+	height: 50%;
+	padding-top: 3vh;
+	box-sizing: border-box;
 	border-radius: 10px;
 }
-.News>.news_content>.news-right>img{
+.News .content1 .news_content>.news-right>img{
 	display: inline-block;
 	width: 100%;
 	height: 100%;
@@ -641,10 +651,10 @@ body,html{
 .oMask{
 	animation: oMask 0.5s 1.5s forwards;
 }
-.News>.news_content>.news-right>.mask{
+.News .content1 .news_content>.news-right>.mask{
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 0.5vh;
 	width: 100%;
 	height: 17vh;
 	border-radius: 10px;
@@ -652,35 +662,35 @@ body,html{
 	background: rgba(0,0,0,.5);
 	box-sizing: border-box;
 }
-.News>.news_content>.news-right>.mask .title{
+.News .content1 .news_content>.news-right>.mask .title{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	height: 6.3vh;
 }
-.News>.news_content>.news-right>.mask .title span{
-	font-size: 16px;
+.News .content1 .news_content>.news-right>.mask .title span{
+	font-size: 1.2vw;
 	color: #fff;
 	font-weight: 500;
 }
-.News>.news_content>.news-right>.mask .title span.left{
+.News .content1 .news_content>.news-right>.mask .title span.left{
 	border-bottom: 1px solid #fff;
 }
-.News>.news_content>.news-right>.mask .title span.right{
+.News .content1 .news_content>.news-right>.mask .title span.right{
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
 }
-.News>.news_content>.news-right>.mask p{
+.News .content1 .news_content>.news-right>.mask p{
 	overflow: hidden;
 }
-.News>.news_content>.news-right>.mask span{
+.News .content1 .news_content>.news-right>.mask span{
 	display: inline-block;
-	font-size: 14px;
+	font-size: 0.8vw;
 	color: #999;
-	line-height: 20px;
+	line-height: 1.4vw;
 }
-.News>.news_content>.news-right>.mask p a{
+.News .content1 .news_content>.news-right>.mask p a{
 	float: right;
 	display: flex;
 	justify-content: center;
@@ -692,7 +702,7 @@ body,html{
 	border: 1px solid #fff;
 	box-sizing: border-box;
 }
-.News>.news_content>.news-right>.mask p a i{
+.News .content1 .news_content>.news-right>.mask p a i{
 	display: inline-block;
 	font-size: 16px;
 	color: #fff;
@@ -702,6 +712,8 @@ body,html{
 /*联系我们样式开始*/
 .contactUs>.us-content{
 	display: flex;
+	width: 100%;
+	height: 90%;
 	padding-top: 10vh;
 	box-sizing: border-box;
 }
@@ -710,31 +722,31 @@ body,html{
 	left: 0;
 	top: 10vh;
 	width: 54.6vw;
-	height: 91vh;
-	padding: 5.7vh 7.3vw 4.8vh 5.2vw;
+	height: 90%;
+	padding-left: 5.2vw;
 	box-sizing: border-box;
 	background: -webkit-linear-gradient(#d3d3d3, #ccc);
 	z-index: 2;
 }
-.contactUs>.us-content>.usLeft h1{
-	font-size: 70px;
-	line-height: 100px;
-	color: #7C4E23;
-	font-weight: 200;
+.contactUs>.us-content>.usLeft img{
+	display: block;
 }
-.contactUs>.us-content>.usLeft h2{
-	font-size: 50px;
-	line-height: 50px;
-	color: #7C4E23;
-	font-weight: 500;
+.contactUs>.us-content>.usLeft .img1{
+	width: 75%;
+	margin-top: 10vh;
+}
+.contactUs>.us-content>.usLeft .img2{
+	width: 30%;
+	margin-top: 5vh;
 }
 .contactUs>.us-content>.usLeft p{
+	width: 65%;
 	margin: 3vh 0;
 }
 .contactUs>.us-content>.usLeft p span{
 	display: inline-block;
-	font-size: 14px;
-	line-height: 24px;
+	font-size: 1vw;
+	line-height: 1.4vw;
 	color: #666;
 	letter-spacing: 2px;
 	text-indent: 30px;
@@ -755,9 +767,10 @@ body,html{
 }
 .contactUs>.us-content>.usLeft .usImg ul li a{
 	color: #fff;
-	font-size: 12px;
+	font-size: 1vw;
 }
 .contactUs>.us-content>.usLeft .usImg ul li a i{
+	font-size: 1vw;
 	margin-right: 1vw;
 }
 .contactUs>.us-content>.usLeft .text{
@@ -775,6 +788,7 @@ body,html{
 }
 .contactUs>.us-content>.usLeft .text li a{
 	display: inline-block;
+	font-size: 1vw;
 	padding: 0 1.6vw;
 	box-sizing: border-box;
 	border-right: 1px solid #fff;
@@ -847,8 +861,8 @@ body,html{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 20px;
-	height: 20px;
+	width: 1.6vw;
+	height: 1.6vw;
 	border-radius: 50%;
 	border: 0.5px solid transparent;
 	margin: 15px 0;
@@ -865,8 +879,8 @@ body,html{
 	transform-origin: center center;
 }
 .fixed li p{
-	width: 13px;
-	height: 13px;
+	width: 1.2vw;
+	height: 1.2vw;
 	border-radius: 50%;
 	background: #33343c;
 	transition: 1s;
@@ -878,11 +892,11 @@ body,html{
 }
 .num p:first-child{
 	color: orange;
-	font-size: 30px;
+	font-size: 3vw;
 }
 .num p:last-child{
 	color: #000;
-	font-size: 16px;
+	font-size: 1.6vw;
 	text-align: right;
 }
 .num p:last-child span{

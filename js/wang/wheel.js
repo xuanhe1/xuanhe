@@ -88,7 +88,7 @@ function slide(num){
 	if(num == 1){
 		$('.about>.img>img').addClass('nImg')
 		$('.about>img').addClass('aImg')
-		$('.about>.img>.text h1').addClass('nH1')
+		$('.about>.img>.text img').addClass('nH1')
 		$('.about>.img>.text p span').addClass('oSpan')
 		$('.about>.img>.text button').addClass('opacity')
 	}
@@ -98,7 +98,7 @@ function slide(num){
 	}
 	//新闻中心动画
 	if(num == 3){
-		$('.News>img').addClass('animated fadeInDown delay-1s');
+		$('.News .content1 img').addClass('animated fadeInDown delay-1s');
 		$('.news-left img').addClass('animated fadeInUp delay-1s');
 		$('.news-left h1,.news-left h2,.news-left h3').addClass('animated fadeInLeft delay-1s');
 		$('.news-right').addClass('animated fadeInRight delay-1s');
