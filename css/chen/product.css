@@ -1,48 +1,48 @@
-
+body{background:#f3f3f3;}
 .box{
-		width:90%;
-		height:60px;
+		width:90vw;
+		height:10vh;
 		margin:0 auto;
 	}
 	.logo{
-		width:120px;
-		height:60%;
+		width:10vw;
+		height:6vh;
 		float:left;
-		margin-top:10px;
+		margin-top:2vh;
 	}
 	.box2{
-		width:50%;
-		height:100%;
+		width:45vw;
+		height:10vh;
 		float:left;
-		margin-left:10%;
+		margin-left:10vw;
 	}
-	.box2 li{
+	.box2 li a{
+		display:block;
 		float:left;
-		line-height:60px;
+		line-height:10vh;
 		color:#666666;
-		font-size:16px;
-		width:20%;
+		font-size:1.2vw;
+		width:9vw;
 		text-align:center;
 	}
-	.box2 li:hover{
+	.box2 li a:hover{
 		color:#fff;
 		background:#d4c587;
 	}
 	.box3{
-		width:10%;
-		height:100%;
+		width:10vw;
+		height:10vh;
 		float:right;
 	}
-	.box3 li{
-		width:30%;
-		height:100%;
-		line-height:60px;
+
+	.box3 li a i{
+		width:3vw;
+		height:10vh;
+		line-height:10vh;
 		text-align:center;
 		float:right;
-	}
-	.box3 li a i{
 		color: #000;
-		font-size:24px;
+		font-size:1.6vw;
 	}
 	@keyframes jump{
 		from{
@@ -56,43 +56,41 @@
 		animation: jump 0.2s alternate infinite;
 	}
 /* banner开始 */
-.banner{width:100%;height: 110px;min-width:1220px;}
+.banner{width:100%;height:15.4vh;min-width:1200px;}
 .banner>div{width:100%;height:100%;position: relative;}
 .banner>div>img{width:100%;height:100%}
-.banner>div>div{width:100%;height:100%;position:absolute;top:0;left:0;background:rgba(0,0,0,.1);color:#fffefe;text-align: center;}
-.banner>div>div>p{font-size:16px;margin-top:30px;}
-.banner>div>div>span{font-size:16px;}
+.banner>div>div{width:100%;height:100%;position:absolute;top:0;left:0;background:rgba(0,0,0,.2);color:#fffefe;text-align: center;}
+.banner>div>div>p{font-size:1.2vw;margin-top:4.8vh;}
+.banner>div>div>span{font-size:1.2vw;}
 /* banner结束 */
 /* 主体部分开始 */
-.main{width:100%;background:#f3f3f3;padding:40px 0;}
-.main>div{width:84vw;margin:auto;overflow: hidden;min-width:1220px;/* padding:0 7vw; */}
+.main{width:100%;margin:auto;padding:4.5vh 0;}
+.main>.clearfix{width:87vw;margin:auto;overflow: hidden;min-width:1200px;}
 /* 上面切换按钮 */
-.main>div>.check-btn{width:55%;margin:auto;font-size:16px;color:#999;display: flex;justify-content: space-around;padding-top:7px;line-height:10px;margin-bottom:30px;}
-.main>div>.check-btn>li{padding:8px;}
-.main>div>.check-btn:first-child li{margin-left:30px;}
-.main>div>.check-btn li.active{padding:8px 10px;background:#7c4e23;color:#fff;border-radius:15px;}
+.main>.clearfix>.check-btn{width:39vw;margin:auto;font-size:1.1vw;color:#999;display: flex;justify-content:flex-start;margin-bottom: 4.2vh;}
+.main>.clearfix>.check-btn>li{padding:1.3vh;}
+.main>.clearfix>.check-btn:first-child li{margin-left:2vw;}
+.main>.clearfix>.check-btn li.active{padding:0.7vh 1vw;background:#7c4e23;color:#fff;border-radius:1.8vw;line-height:5vh}
 /* 切换的内容 */
-.main>div>.check-content{width:84vw;min-width:1220px;display: flex;}
-.main>div>.check-content>ol{width:100%;display: flex;justify-content: space-between;backgrund:red}
-.main>div>.check-content>ol>li{width:22.3%;}
-.main>div>.check-content>ol>li>.top{width:100%;overflow: hidden;}
-.main>div>.check-content>ol>li>.top>img{width:100%;transition: 0.8s;display:block;}
-.main>div>.check-content>ol>li:hover .top>img{transform: scale(1.2);transition:0.8s;}
-.main>div>.check-content>ol>li>.bottom{padding:20px;background:#fff;width:85%}
-.main>div>.check-content>ol>li>.bottom>h5{font-size:14px;margin-bottom:7px;color:#444;}
-.main>div>.check-content>ol>li>.bottom>span{fon-size:13px;color:#666;}
-.main>div>.check-content>ol>li>.bottom>.line{width:10px;height:2px;background:#7c4e23;transition:0.8s}
-.main>div>.check-content>ol>li:hover .bottom>.line{width:50px;transition:0.8s}
-.main>div>.check-content>ol>li>.bottom>.text{font-size:12px;margin-top:7px;color:#666666;}
-.main>div>.check-content>ol>li>.bottom>div{width:50px;padding:3px 5px;border:1px solid #7c4e23;display: flex;justify-content: space-around;border-radius: 15px;margin-top:6px;margin-left:160px;cursor: pointer;}
-.main>div>.check-content>ol>li>.bottom>div>.san{width:0;height: 0;border:5px solid transparent;border-left:5px solid #7c4e23;margin-top:4px;}
-.main>div>.check-content>ol>li>.bottom>div:hover{background:#774b21;color:#fff;}
-.main>div>.check-content>ol>li>.bottom>div:hover .san{width:0;height: 0;border-left:5px solid #fff;}
-/* 分页器 */
-.main .page{width:30%;display: flex;margin:30px auto;}
-.main .page>a{display: block;font-size:20px;padding:7px;}
-.main .page span{padding:7px;}
-.main .page>a:first-child{padding:7px 12px;border:1px solid #000}
-.main .page>a:last-child{padding:7px 12px;border:1px solid #000}
+.main>.check-content{width:100%;height:70.2vh;min-width:1200px;overflow: hidden;position: relative;}
+.main>.check-content>div{ width:100%;height:60vh;display:flex;position:relative;box-sizing: border-box;/* flex-wrap: wrap; */}
+.main>.check-content>div>ol{width:100% !important;height:54vh;/* margin:auto; */display: flex;padding:0 6.6vw;background: red;box-sizing: border-box;/* justify-content: space-between; */;}
+.main>.check-content>div>ol:nth-child(1){background: blue;}
+.main>.check-content>div>ol:nth-child(2){background: green;}
+.main>.check-content>div>ol:nth-child(3){background: yellow;}
+.main>.check-content>div>ol>li{width:20vw;height:54vh;margin:0 0.7vw;box-sizing: border-box;}
+.main>.check-content>div>ol>li>.top{width:100%;height:32.2vh;overflow: hidden;}
+.main>.check-content>div>ol>li>.top>img{width:100%;height:100%;transition: 0.8s;display:block;}
+.main>.check-content>div>ol>li:hover .top>img{transform: scale(1.2);transition:0.8s;}
+.main>.check-content>div>ol>li>.bottom{background:#fff;width:100%;height:22vh;padding:3.3vh 0 0 0}
+.main>.check-content>div>ol>li>.bottom>h5{font-size:1vw;margin:0 0 1.6vh 1vw;color:#444;}
+.main>.check-content>div>ol>li>.bottom>span{fon-size:0.9vw;color:#666;margin:0 0 0.8vh 1vw}
+.main>.check-content>div>ol>li>.bottom>.line{width:0.5vw;height:0.18vh;margin:0 0 2.3vh 1vw;background:#7c4e23;transition:0.8s}
+.main>.check-content>div>ol>li:hover .bottom>.line{width:3.3vw;transition:0.8s}
+.main>.check-content>div>ol>li>.bottom>.text{font-size:0.8vw;color:#666666;margin:0 1vw}
+.main>.check-content>div>ol>li>.bottom>div{width:4.27vw;padding:0.3vh 0.26vw;border:0.1vw solid #7c4e23;display: flex;justify-content: space-around;border-radius:1.46vw;margin:1.6vh 1vw 0 14vw;cursor: pointer;}
+.main>.check-content>div>ol>li>.bottom>div>.san{width:0;height: 0;border:0.36vw solid transparent;border-left:0.36vw solid #7c4e23;margin-top:0.55vh}
+.main>.check-content>div>ol>li>.bottom>div:hover{background:#774b21;color:#fff;}
+.main>.check-content>div>ol>li>.bottom>div:hover .san{width:0;height: 0;border-left:0.36vw solid #fff;}
 /* 主体部分结束 */
-footer{width:100%}
+footer{width:100%}px
