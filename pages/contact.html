@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="../font/css/font-awesome.min.css" />
   <link rel="stylesheet" href="../fonts/iconfont.css">
   <link rel="stylesheet" href="../css/animate.css" />
+  <style type="text/css">
+	#allMap{
+		width:100vw;
+		height:70vh;
+		margin:0 auto;
+	}
+  </style>
  </head>
  <body>
 	<div class="box">
@@ -27,7 +34,32 @@
 	</div>
 	<img src="../img/conca.png" alt="" class="oImg1" />
 
+	<div class="box4">
+		<img src="../img/lad.png" alt="" class="oImg2"/>
+		<p class="text_2">与我们保持联系，是解决您一切问题的有效途径</p>
+		<ul class="box5">
+			<li>
+				<img src="../img/lon.png" alt="" />
+				<p class="text_3">联系电话</p>
+				<p class="text_4">136-5368-9893</p>
+			</li>
+			<li>
+				<img src="../img/lla.png" alt="" />
+				<p class="text_3">联系地址</p>
+				<p class="text_4">北京市大兴区金苑路32号1幢2层221室</p>
+			</li>
+			<li>
+				<img src="../img/wer.png" alt="" />
+				<p class="text_3">服务邮箱</p>
+				<p class="text_4">89893@163.com</p>
+			</li>
+		</ul>
+	</div>
+	
 
+	<div id="allMap">
+			
+	</div>
 
 
 
@@ -45,6 +77,7 @@
 				</div>
 				<div class="tel">
 					<p>Tel: 0825-2287099</p>
+
 					<div class="tel-con">
 						<p><span>网站地图</span>|<span>联系我们</span></p>
 						<p><a href="#"><i class="iconfont icon-jiaruwomen"></i>加入我们</a><a href="#"><i class="iconfont icon-youxiang"></i>企业邮箱</a></p>
@@ -63,4 +96,36 @@
  </body>
  <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
  <script type="text/javascript" src="../js/public.js"></script>
+ <script type="text/javascript" 
+ src="http://api.map.baidu.com/api?v=2.0&ak=Tsysj1oxCFHwq527G3H58C7gydhFeLhU"></script>
+ <script type="text/javascript">
+ 		window.onload=function(){
+ 				// 百度地图API功能
+ 			
+ 	//		var p=new BMap.Point(116.404, 39.915)	//通过经纬度确定中心坐标对象
+ 	
+ 		navigator.geolocation.getCurrentPosition(function(p){	
+ 			
+ 			
+ 			var j=p.coords.longitude;
+ 			var w=p.coords.latitude;
+ 			
+ 			//百度地图API功能
+ 			var map = new BMap.Map("allMap");    // 创建Map实例
+ 				map.centerAndZoom("北京",12);  // 初始化地图,设置中心点坐标和地图级别
+ 			
+ 			
+ 			
+ 				//地图类型
+ 				map.addControl(new BMap.MapTypeControl({
+ 				mapTypes:[
+ 					BMAP_NORMAL_MAP,
+ 					BMAP_HYBRID_MAP
+ 				]}));
+ 				map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+ 				map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+ 
+ 			})
+ 		}
+ </script>
 </html>
