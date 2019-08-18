@@ -9,9 +9,7 @@
   <link rel="stylesheet" href="../fonts/iconfont.css">
   <link rel="stylesheet" href="../css/animate.css" />
   <style type="text/css">
-	body{
-		overflow:hidden;
-	}
+
   </style>
  </head>
  <body>

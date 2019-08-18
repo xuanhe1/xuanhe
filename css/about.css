@@ -7,7 +7,7 @@
 		margin:0 auto;
 	}
 	.logo{
-		width:10vw;
+		width:6.8vw;
 		height:6vh;
 		float:left;
 		margin-top:2vh;
@@ -71,17 +71,27 @@
 	}
 	.text1{
 		width:75vw;
-		margin:6vh auto;
+		height:14vh;
+		float:left;
 		line-height:6vh;
 		color:#666666;
 		font-size:1vw;
+		margin:2vh 30vw 0 12vw;
+	}
+	.text2{
+		width:75vw;
+		height:14vh;
+		float:left;
+		line-height:6vh;
+		color:#666666;
+		font-size:1vw;
+		margin:0 30vw 4vh 12vw;
 	}
 	.oImg2{
 		width:23vw;
 		height:20vh;
-		margin-top:2vh;
-		margin-bottom:1vh;
-		margin-left:35vw;
+		margin:2vh 30vw 1vh 35vw;
+		float:left;
 	}
 
 	.oImg3{
