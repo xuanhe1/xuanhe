@@ -92,8 +92,10 @@ $.ajax({
 			pagination.init({currentPage:1});
 			var index = $(this).index();
 			
-			var arr=['../img/zhu/banner1.png','../img/zhu/banner2.png']
+			var arr=['../img/zhu/banner1.jpg','../img/zhu/banner2.jpg']
+			var arr2=['新闻中心','行业动态']
 			$('.banner').attr('src',arr[index]);
+			$('.banner-text>.text').text(arr2[index])
 			$(".tabson").eq(index).addClass("tabon").siblings().removeClass("tabon");
 			if (index == 0) {
 				
