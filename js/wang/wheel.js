@@ -106,7 +106,7 @@ function slide(num){
 		$('.title .left').addClass('animated fadeInLeft delay-2s');
 		$('.title .right').addClass('animated fadeInRight delay-2s');
 		$('.news-right p span').addClass('animated fadeInUp delay-2s');
-		$('.news-left>a').addClass('animated fadeIn delay-2s');
+		$('.news-left>button').addClass('animated fadeIn delay-2s');
 		$('.mask').addClass('oMask');
 	}
 	//联系我们动画

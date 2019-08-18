@@ -1,10 +1,10 @@
 [
 	{
-		"pid":"001",
+		"pid":"s001",
 		"title":"释压按摩进口",
 		"name":"乳胶枕",
 		"introduce":"蝴蝶形的弧度外观为人体提供了殷实的护肩作用，着重于舒缓肩部肌肉，契合肩部与枕头的空隙",
-		"tImg":"../img/",
+		"tImg":"../img/chen/d-banner.png",
 		"location":"释压按摩进口乳胶枕",
 		"intro":"释压按摩进口乳胶枕",
 		"tName":"释压按摩进口乳胶枕",
@@ -17,21 +17,21 @@
 		"pillow":"80%棉 20%聚脂钎维",
 		"sleeve":"聚脂钎维",
 		"recom":"各类人群",
-		"IntroImg":"../img/",
+		"IntroImg":"../img/chen/装饰.png",
 		"IntroImgO":[
 			{
-				"oImg":"../img/"
+				"oImg":"../img/chen/d-main2.png"
 			},
 			{
-				"oImg":"../img/"
+				"oImg":"../img/chen/d-main3.png"
 			},
 			{
-				"oImg":"../img/"
+				"oImg":"../img/chen/d-main4.png"
 			}
 		]
 	},
 	{
-		"pid":"002",
+		"pid":"s002",
 		"title":"释压按摩进口",
 		"name":"乳胶枕",
 		"introduce":"蝴蝶形的弧度外观为人体提供了殷实的护肩作用，着重于舒缓肩部肌肉，契合肩部与枕头的空隙",
