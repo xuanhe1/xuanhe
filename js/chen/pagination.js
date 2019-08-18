@@ -27,20 +27,26 @@ var pagination = pagination || {};
             this._btnsValue = obj.btnCount?obj.btnCount:7;
             /*页码过多，左右都存在省略号时，当前点击页码左右两边的页码个数*/
             this._halfbtns = parseInt((this._btnsValue-3)/2);
-			
+		
             /*显示的总页面数*/
             this._btnNum = obj.total/obj.pagesize>parseInt(obj.total/obj.pagesize)?parseInt(obj.total/obj.pagesize)+1:parseInt(obj.total/obj.pagesize);  
 			
         },
         bindEvent: function(){
             var that = this;
-			$('.main>div>.check-btn>li').click(function(){
-				that._currentPage=1
-			})
+			
+			
+			 //数据切换初始页
+			 $(".check-btn").on("click","li",function(){
+				  that._currentPage=1;
+				  console.log( that._currentPage)
+			 })
+			 
             /*页码点击*/
             $(that._wrapid).on('click','.pagenum',function(){
                 that._currentPage = parseInt($(this).text());
                 that._cb(that._currentPage);
+				console.log( that._currentPage)
                 isshowMore.call(that);
             });
 
@@ -56,6 +62,7 @@ var pagination = pagination || {};
                 }else{
                     $('#pagination-prev').removeClass('pagination-disabled');
                 }
+				console.log("1:"+that._currentPage)
                 that._cb(that._currentPage);
                 isshowMore.call(that);
             });
@@ -73,7 +80,9 @@ var pagination = pagination || {};
                 }else{
                     $('#pagination-next').removeClass('pagination-disabled')
                 }
+					console.log("2:"+that._currentPage)
                 that._cb(that._currentPage);
+			
                 isshowMore.call(that);
             });
             isshowMore.call(this);
@@ -104,18 +113,21 @@ var pagination = pagination || {};
                 var firstbtn = '<li class="pagenum pagination-btn" data-num="1">1</li>';
                 var lastbtn = '<li class="pagenum pagination-btn" data-num='+this._btnNum+'>'+this._btnNum+'</li>';
                 var prevbtn = '<span class="pagination-btn" id="pagination-prev"><</span>';
-                var nextbtn = '<span class="pagination-btn" id="pagination-next">></span>'
+                var nextbtn = '<span class="pagination-btn" id="pagination-next">></span>';
+			
                 if(this._currentPage == 1){
                     firstbtn = '<li class="pagenum pagination-btn pagination-current" data-num="1">1</li>';
                     prevbtn = '<span class="pagination-btn pagination-disabled" id="pagination-prev"><</span>'
                 }
                 if(this._currentPage == this._btnNum){
+					
                     lastbtn = '<li class="pagenum pagination-btn pagination-current" data-num='+this._btnNum+'>'+this._btnNum+'</li>';
                     nextbtn = '<span class="pagination-btn pagination-disabled" id="pagination-next">></span>'
                 }
-                
+               
                 if(ismorePosition == 'none'){
                     for(var i = 1; i <= this._btnNum; i++){
+				
                         if(i == this._currentPage){
                             html+= '<li class="pagenum pagination-btn pagination-current" data-num='+i+'>'+i+'</li>';
                         }else{
@@ -145,7 +157,7 @@ var pagination = pagination || {};
                             html+='<li class="pagenum pagination-btn" data-num='+i+'>'+i+'</li>';
                         }
                     }
-                }
+                }  
                 
                 if(ismorePosition=="all"){
                     // console.log('省略前后都有');
@@ -161,7 +173,20 @@ var pagination = pagination || {};
                     html+=ismore+lastbtn;
                 }
                 $(this._wrapid).html(prevbtn+'<ul class="pagination-wrap">'+html+'</ul>'+nextbtn);
+				
+				
+				$.each($('.pagination-wrap>li'),function(i,v){
+					
+					if($(v).text()-0&&(10>$(v).text()-0)){
+						$(v).text("0"+$(v).text())
+					}
+				})
+				$("#pagination-prev,#pagination-next").html("")
+				$("#pagination-prev").addClass("iconfont icon-zuo")
+				$("#pagination-next").addClass("iconfont icon-you")
             }
+			
+			
         },
         init:function(paginationObj){
             this.render(paginationObj);
