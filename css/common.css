@@ -1,18 +1,18 @@
+/*底部*/
 footer{
+	display: flex;
+	width: 100%;
+	height: 42%;
+	background: #eee;
+	padding: 3% 0;
+}
+.footer-content{
+	width: 84%;
+	margin: 3vw auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100vw;
-	height: 42vh;
-	background: #eee;
-	padding: 7vh 10.5vw 6.3vh 10vw;
-	box-sizing: border-box;
 }
-
-
-
-
-
 /* 底部左边开始 */
 .footer_left{
 	width: 43vw;
@@ -23,27 +23,28 @@ footer{
 	justify-content: space-between;
 	align-items: center;
 	width: 95%;
-	height: 5vh;
-	margin-bottom: 4vh;
+	height: 8%;
+	margin-bottom: 8%;
 }
 .footer_left>ul li a{
 	color: #000;
-	font-size: 16px;
+	font-size: 1.2vw;
 }
 .footer_left .txt{
-	margin-bottom: 3vh;
+	margin-bottom: 8%;
 }
 .footer_left .txt p{
-	font-size: 12px;
+	font-size: 1vw;
 	color: #999;
-	line-height: 3vh;
+	line-height: 1.5vw;
 }
 .footer_left .tel{
 	margin-bottom: 2.5vh;
 }
 .footer_left .tel p{
-	font-size: 12px;
+	font-size: 1vw;
 	color: #999;
+	line-height: 1.5vw;
 }
 .footer_left .tel .tel-con{
 	display: flex;
@@ -59,24 +60,20 @@ footer{
 .footer_left .tel .tel-con a{
 	padding: 0.5vh 1vw;
 	margin-left: 1vw;
-	border: 1px solid #000;
+	border: 1px solid #ccc;
 	box-sizing: border-box;
 }
 .footer_left .tel .tel-con a i{
-	font-size: 16px;
+	font-size: 1.2vw;
 	padding-right: 0.5vw;
 	box-sizing: border-box;
 }
 .footer_left .text{
-	font-size: 12px;
+	font-size: 0.8vw;
 	color: #999;
+	line-height: 1.5vw;
+	
 }
-
-
-
-
-
-
 /*底部左边结束*/
 /* 底部右边开始 */
 .footer_right{
@@ -86,14 +83,18 @@ footer{
 	width: 13vw;
 	height: 100%;
 }
+.footer_right .img{
+	text-align: center;
+}
 .footer_right .img img{
 	display: inline-block;
 	width: 8vw;
-	height: 14vh;
+	margin-right: 0.4vw;
 }
 .footer_right .img p{
 	color: #999;
-	font-size: 12px;
+	font-size: 1vw;
+	margin-top: 0.2vw;
 	text-align: center;
 }
 .footer_right a{
@@ -102,25 +103,26 @@ footer{
 	justify-content: center;
 	align-items: center;
 	width: 2.5vw;
-	padding: 0.5vh 0.5vw;
+	padding: 4% 0.5%;
 	color: #D4C587;
-	margin-left: 2vw;
-	box-sizing: border-box;
 	background: #fff;
 	border-radius: 25px;
 }
 .footer_right a>i{
 	display: inline-block;
-	font-size: 18px;
-	padding-bottom: 1.6vh;
+	font-size: 1.2vw;
+	margin-bottom: 5px;
 	box-sizing: border-box;
 }
 .footer_right a span{
 	display: inline-block;
 	font-size: 12px;
 	margin-bottom: 10px;
+	font-size: 0.8vw;
+	margin: 0.6vw;
 	transform-origin: center center;
 	transform: rotate(90deg);
 }
 /* 底部右边结束 */
+/*底部*/
 /*底部*/
