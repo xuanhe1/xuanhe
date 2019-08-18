@@ -34,6 +34,9 @@ var pagination = pagination || {};
         },
         bindEvent: function(){
             var that = this;
+			$(that._wrapid).off("click")
+			
+			
             /*页码点击*/
             $(that._wrapid).on('click','.pagenum',function(){
                 that._currentPage = parseInt($(this).text());
@@ -169,7 +172,9 @@ var pagination = pagination || {};
 						$(v).text("0"+$(v).text())
 					}
 				})
-				
+				$("#pagination-prev,#pagination-next").html("")
+				$("#pagination-prev").addClass("iconfont icon-zuo")
+				$("#pagination-next").addClass("iconfont icon-you")
             }
 			
 			

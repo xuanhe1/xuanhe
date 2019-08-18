@@ -34,7 +34,7 @@ $.ajax({
 						<h4 class="main-content-bottom">
 							<span>${d[newsList].time}</span>
 							<span>${d[newsList].enterprise}</span>
-							<a class="more">&nbsp;MORE<div class="san"></div></a>
+							<a href="./news-detail.html" class="more">&nbsp;MORE<div class="san"></div></a>
 						</h4>
 					</div>`
 			)
@@ -78,7 +78,7 @@ $.ajax({
 										<p>${d[newsList].content[i].name}</p>
 										<span class="slider"></span>
 										<p>${d[newsList].content[i].information}</p>
-										<a class="more">&nbsp;MORE<div class="san"></div></a>
+										<a href="./news-detail.html" class="more">&nbsp;MORE<div class="san"></div></a>
 									</div>
 								</li>`
 					).appendTo(ul)
