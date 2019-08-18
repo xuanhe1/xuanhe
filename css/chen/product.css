@@ -67,14 +67,14 @@ body{background:#f3f3f3;}
 .main{width:100%;margin:auto;padding:4.5vh 0;}
 .main>.clearfix{width:87vw;margin:auto;overflow: hidden;min-width:1200px;}
 /* 上面切换按钮 */
-.main>.clearfix>.check-btn{width:39vw;margin:auto;font-size:1.1vw;color:#999;display: flex;justify-content:flex-start;margin-bottom: 4.2vh;}
+.main>.clearfix>.check-btn{font-size:1.1vw;color:#999;display: flex;justify-content:center;margin-bottom: 4.2vh;}
 .main>.clearfix>.check-btn>li{padding:1.3vh;}
 .main>.clearfix>.check-btn:first-child li{margin-left:2vw;}
 .main>.clearfix>.check-btn li.active{padding:0.7vh 1vw;background:#7c4e23;color:#fff;border-radius:1.8vw;line-height:5vh}
 /* 切换的内容 */
 .main>.check-content{width:86vw;height:72vh;overflow: hidden;position: relative;margin: 0 auto;}
 .main>.check-content>div{ width:100%;display:flex;position:relative;box-sizing: border-box;/* flex-wrap: wrap; */}
-.main>.check-content>div>ol{width:100% ;display: flex;background: red;}
+.main>.check-content>div>ol{width:100% ;display: flex;}
 .main>.check-content>div>ol>li{width:20vw;/* height:54vh; */box-sizing: border-box; margin-left: 2vw;}
 .main>.check-content>div>ol>li:nth-child(1){margin-left: 0;}
 
