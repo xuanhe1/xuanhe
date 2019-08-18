@@ -235,7 +235,8 @@ body {
 .slider {
 	display: block;
 	width: 2vw;
-	height: 2px;
+	height: 0.3vh;
+	margin: 0.5vh 0;
 	background: #7C4E23;
 	transition: 0.5s;
 }

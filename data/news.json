@@ -1,6 +1,7 @@
 {
 	"f001": {
 		"title": "公司新闻",
+		"pid": "n000",
 		"newsImg": "../img/zhu/banner1.png",
 		"inImg": "../img/zhu/headimg1.png",
 		"titleNew": "煊赫公司、泰橡集团达成战略合作伙伴关系共同改革发展",
@@ -74,6 +75,7 @@
 	},
 	"f002": {
 		"title": "行业动态",
+		"pid": "h000",
 		"newsImg": "../img/zhu/banner2.png",
 		"inImg": "../img/zhu/headimg2.png",
 		"titleNew": "360牵手ORVIBO能在智能锁市场掀起多大波澜？",
