@@ -5,7 +5,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/contact.css" />
-  <link rel="stylesheet" href="../css/comman.css" />
+  <link rel="stylesheet" href="../css/common.css" />
   <link rel="stylesheet" href="../font/css/font-awesome.min.css" />
   <link rel="stylesheet" href="../fonts/iconfont.css">
   <link rel="stylesheet" href="../css/animate.css" />
@@ -62,9 +62,9 @@
 				<div class="footer_left">
 					<ul>
 						<li><a href="#">产品中心</a></li>
-						<li><a href="#">关于煊赫</a></li>
+						<li><a href="about.html">关于煊赫</a></li>
 						<li><a href="#">新闻中心</a></li>
-						<li><a href="#">联系我们</a></li>
+						<li><a href="contact.html">联系我们</a></li>
 					</ul>
 					<div class="txt">
 						<p>No.293,Kaishan Road,Chuanshan District,Suining City,Sichuan Provinc</p>

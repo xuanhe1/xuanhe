@@ -9,9 +9,6 @@
   <link rel="stylesheet" href="../font/css/font-awesome.min.css" />
   <link rel="stylesheet" href="../fonts/iconfont.css">
   <link rel="stylesheet" href="../css/animate.css" />
-  <style type="text/css">
-
-  </style>
  </head>
  <body>
 	<div class="box">
@@ -19,9 +16,9 @@
 		<ul class="box2">
 			<li><a href="#">首页</a></li>
 			<li><a href="#">产品中心</a></li>
-			<li><a href="#">关于煊赫</a></li>
+			<li><a href="about.html">关于煊赫</a></li>
 			<li><a href="#">新闻中心</a></li>
-			<li><a href="#">联系我们</a></li>
+			<li><a href="contact.html">联系我们</a></li>
 		</ul>
 		<ul class="box3">
 			<li><a href="#"><i class="icon-map-marker"></i></a></li>
@@ -47,7 +44,7 @@
 						<li><a href="#">产品中心</a></li>
 						<li><a href="#">关于煊赫</a></li>
 						<li><a href="#">新闻中心</a></li>
-						<li><a href="#">联系我们</a></li>
+						<li><a href="contact.html">联系我们</a></li>
 					</ul>
 					<div class="txt">
 						<p>No.293,Kaishan Road,Chuanshan District,Suining City,Sichuan Provinc</p>
