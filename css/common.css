@@ -30,6 +30,9 @@ footer{
 	color: #000;
 	font-size: 1.2vw;
 }
+.footer_left>ul li a:hover{
+	color: #7C4E23;
+}
 .footer_left .txt{
 	margin-bottom: 8%;
 }
