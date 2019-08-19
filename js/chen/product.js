@@ -65,8 +65,8 @@ function fn(ss){
 	$('.main>.check-content>div').css({width:5000000+"vw"})
 	
 	for(var j=0;j<ulLength;j++){
-		$('.check-content>div').append("<ol></ol>")
-	}
+		$('.check-content>div').append("<ol></ol>");
+	};
 	let num=0;//数据
 	let inp=0;//ol个数
 	for(var i=0;i<ss.length;i++){
@@ -74,23 +74,23 @@ function fn(ss){
 		if(num>4){
 			num=1;//当数量大于4的时候 就为1  ol新添加一个
 			inp++;
-		}
-		console.log(ss[i].pid)
+		};
+		console.log(ss[i].pid);
 		$('.check-content>div>ol').eq(inp).append(`<li>
-				<a href="./details.html?id='+${ss[i].pid}'" target="_blank">
-					<div class='top'>
-					<img src="${ss[i].newsImg}" alt="">
-					</div>
-				</a>
-				<div class='bottom'>
-					<h5>${ss[i].name}</h5>
-					<span>${ss[i].introduce}</span>
-					<p class='line'></p>
-					<p class='text'>${ss[i].Introduction}</p>
-					<a href="./details.html?id='+${ss[i].pid}'" target="_blank">
-						<div>MORE <div class='san'></div></div></a>
+			<a href="./details.html?id='+${ss[i].pid}'" target="_blank">
+				<div class='top'>
+				<img src="${ss[i].newsImg}" alt="">
 				</div>
-			</li>`);
+			</a>
+			<div class='bottom'>
+				<h5>${ss[i].name}</h5>
+				<span>${ss[i].introduce}</span>
+				<p class='line'></p>
+				<p class='text'>${ss[i].Introduction}</p>
+				<a href="./details.html?id='+${ss[i].pid}'" target="_blank">
+					<div>MORE <div class='san'></div></div></a>
+			</div>
+		</li>`);
 	}
 }
 
