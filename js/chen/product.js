@@ -41,6 +41,7 @@ $('.main>div>.check-btn>li').click(function(){
 	$.ajax({
 		url:'../js/chen/product.json',
 		success:function(res){
+			console.log(res)
 			// 刚开始就出现
 			var data=res[attr[ index]].list;
 			 fn(data)
@@ -62,13 +63,13 @@ function fn(ss){
 	$('.check-content>div').html("");
 	var ulLength =Math.ceil(ss.length/4);
 	
-	$('.main>.check-content>div').css({width:5000000+"vw"})
+	$('.main>.check-content>div').css({width:500+"vw"})
 	
 	for(var j=0;j<ulLength;j++){
 		$('.check-content>div').append("<ol></ol>");
 	};
-	let num=0;//数据
-	let inp=0;//ol个数
+	var num=0;//数据
+	var inp=0;//ol个数
 	for(var i=0;i<ss.length;i++){
 		num++	
 		if(num>4){
@@ -76,21 +77,23 @@ function fn(ss){
 			inp++;
 		};
 		console.log(ss[i].pid);
-		$('.check-content>div>ol').eq(inp).append(`<li>
-			<a href="./details.html?id='+${ss[i].pid}'" target="_blank">
-				<div class='top'>
-				<img src="${ss[i].newsImg}" alt="">
-				</div>
-			</a>
-			<div class='bottom'>
-				<h5>${ss[i].name}</h5>
-				<span>${ss[i].introduce}</span>
-				<p class='line'></p>
-				<p class='text'>${ss[i].Introduction}</p>
-				<a href="./details.html?id='+${ss[i].pid}'" target="_blank">
-					<div>MORE <div class='san'></div></div></a>
-			</div>
-		</li>`);
+		$('.check-content>div>ol').eq(inp).append(
+		'<li>'+
+				'<a href="./details.html?id='+ss[i].pid+'" target="_blank">'+
+					'<div class="top">'+
+					'<img src="'+ss[i].newsImg+'" alt="">'+
+					'</div>'+
+				'</a>'+
+				'<div class="bottom">'+
+					'<h5>'+ss[i].name+'</h5>'+
+					'<span>'+ss[i].introduce+'</span>'+
+					'<p class="line"></p>'+
+					'<p class="text">'+ss[i].Introduction+'</p>'+
+					'<a href="./details.html?id='+ss[i].pid+'" target="_blank">'+
+						'<div>MORE <div class="san"></div></div></a>'+
+				'</div>'+
+			'</li>'
+			);
 	}
 }
 

@@ -98,7 +98,7 @@ body {
 
 .banner>div>img {
 	width: 100%;
-	height: 100%
+	height: 100%;
 }
 
 .banner>div>div {
@@ -158,7 +158,7 @@ body {
 	background: #7c4e23;
 	color: #fff;
 	border-radius: 1.8vw;
-	line-height: 5vh
+	line-height: 5vh;
 }
 
 /* 切换的内容 */
@@ -213,7 +213,7 @@ body {
 	background: #fff;
 	width: 100%;
 	height: 25vh;
-	padding: 3.3vh 0 0 0
+	padding: 3.3vh 0 0 0;
 }
 
 .main>.check-content>div>ol>li>.bottom>h5 {
@@ -223,9 +223,9 @@ body {
 }
 
 .main>.check-content>div>ol>li>.bottom>span {
-	fon-size: 0.9vw;
+	font-size: 0.9vw;
 	color: #666;
-	margin: 0 0 0.8vh 1vw
+	margin: 0 0 0.8vh 1vw;
 }
 
 .main>.check-content>div>ol>li>.bottom>.line {
@@ -244,7 +244,7 @@ body {
 .main>.check-content>div>ol>li>.bottom>.text {
 	font-size: 0.8vw;
 	color: #666666;
-	margin: 0 1vw
+	margin: 0 1vw;
 }
 
 .main>.check-content>div>ol>li>.bottom>a>div {
@@ -256,6 +256,7 @@ body {
 	border-radius: 1.46vw;
 	margin: 1.6vh 1vw 2vh 14vw;
 	cursor: pointer;
+	font-size:1vw;
 }
 
 .main>.check-content>div>ol>li>.bottom>a>div>.san {
@@ -263,7 +264,7 @@ body {
 	height: 0;
 	border: 0.36vw solid transparent;
 	border-left: 0.36vw solid #7c4e23;
-	margin-top: 0.55vh
+	margin-top: 0.55vh;
 }
 
 .main>.check-content>div>ol>li>.bottom>a>div:hover {

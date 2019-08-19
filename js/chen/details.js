@@ -1,4 +1,4 @@
- var did = location.search.split("=")[1].substr(4,4);
+ var did = location.search.split("=")[1]
  console.log(did)
 $.ajax({
 	url:'../js/chen/details.json',
