@@ -1,0 +1,37 @@
+{
+	"data": {
+		"list": [{
+				"pid": "s001",
+				"newsImg": "./img/wang/产品中心-乳胶制品.png",
+				"title": "乳胶制品",
+				"introduce": "LATEX PRODUCT",
+				"name": "LATEX",
+				"Introduction": "PRODUCT"
+			},
+			{
+				"pid": "s002",
+				"newsImg": "./img/wang/产品中心-智能产品.png",
+				"title": "智能产品",
+				"introduce": "INTELLIGENT PRODUCT",
+				"name": "INTELLIGENT",
+				"Introduction": "PRODUCT"
+			},
+			{
+				"pid": "s003",
+				"newsImg": "./img/wang/产品中心-保健品.png",
+				"title": "保健用品",
+				"introduce": "HEALTH SUPPLIES",
+				"name": "HEALTH",
+				"Introduction": "SUPPLIES"
+			},
+			{
+				"pid": "s004",
+				"newsImg": "./img/wang/产品中心-无纺布纸巾.png",
+				"title": "无纺布纸巾",
+				"introduce": "NON_WOVEN TISSUS",
+				"name": "NON_WOVEN",
+				"Introduction": "TISSUS"
+			}
+		]
+	}
+}
