@@ -66,8 +66,8 @@ function fn(ss){
 	$('.main>.check-content>div').css({width:500+"vw"})
 	
 	for(var j=0;j<ulLength;j++){
-		$('.check-content>div').append("<ol></ol>")
-	}
+		$('.check-content>div').append("<ol></ol>");
+	};
 	var num=0;//数据
 	var inp=0;//ol个数
 	for(var i=0;i<ss.length;i++){
@@ -75,7 +75,8 @@ function fn(ss){
 		if(num>4){
 			num=1;//当数量大于4的时候 就为1  ol新添加一个
 			inp++;
-		}
+		};
+		console.log(ss[i].pid);
 		$('.check-content>div>ol').eq(inp).append(
 		'<li>'+
 				'<a href="./details.html?id='+ss[i].pid+'" target="_blank">'+

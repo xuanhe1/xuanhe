@@ -173,8 +173,8 @@ var pagination = pagination || {};
 					}
 				})
 				$("#pagination-prev,#pagination-next").html("")
-				$("#pagination-prev").addClass("iconfont icon-zuo")
-				$("#pagination-next").addClass("iconfont icon-you")
+				$("#pagination-prev").addClass("icon-angle-left")
+				$("#pagination-next").addClass("icon-angle-right")
             }
 			
 			

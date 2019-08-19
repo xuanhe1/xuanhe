@@ -16,6 +16,10 @@ body,html{
 	height: 100%;
 	position: absolute;
 	top: 0;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition:0.5s;
 }
 .wrap>ul>li{
@@ -25,7 +29,9 @@ body,html{
 	background: #f5f5f5;
 	overflow: hidden;
 }
-
+.wrap>ul>li:nth-of-type(1){
+	background: none;
+}
 /*公共导航*/
 .box{
 	display: none;
@@ -99,16 +105,16 @@ body,html{
 /*公共导航*/
 
 /*公共button样式*/
-button{
+.button11{
 	overflow: hidden;
 }
-button>a{
+.button11>a{
 	position: relative;
 	display: inline-block;
 	width: 100%;
 	height: 100%;
 }
-button>a::before{
+.button11>a::before{
 	content:"";
 	display: inline-block;
 	width: 60%;
@@ -116,10 +122,14 @@ button>a::before{
 	position: absolute;
 	left: -80%;
 	top:0;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 	background: rgba(0,0,0,0.5);
 }
-button>a::after{
+.button11>a::after{
 	content: "";
 	display: inline-block;
 	width: 60%;
@@ -127,13 +137,17 @@ button>a::after{
 	position: absolute;
 	right: -80%;
 	top:0;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 	background: rgba(0,0,0,0.5);
 }
-button>a:hover::before{
+.button11>a:hover::before{
 	left: -10%;
 }
-button>a:hover::after{
+.button11>a:hover::after{
 	right: -10%;
 }
 /*公共button样式*/
@@ -143,26 +157,29 @@ button>a:hover::after{
 @keyframes opacity{
 	from{
 		opacity: 0;
+		filter: alpha(opacity=0);
 	}
 	to{
 		opacity: 1;
+		filter: alpha(opacity=100);
 	}
 }
 .cTop{
-	animation: opacity 2s forwards;
+	animation: opacity 1s forwards;
 }
 .content_top{
 	width: 100%;
 	height: 10vh;
 	opacity: 0;
+	filter: alpha(opacity=0);
 	transform: all 2s;
 }
 .content_top>div{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100vw;
-	height: 9.5vh;
+	width: 100%;
+	height: 10vh;
 	padding: 0 5vw;
 	box-sizing: border-box;
 }
@@ -219,9 +236,8 @@ button>a:hover::after{
 	position: absolute;
 	right: 0;
 	top: 25vh;
-	width: 45%;
-	height: 50%;
-	padding: 28px 0px 0px 65px;
+	width: 45vw;
+	padding: 2vw 0vw 2vw 3vw;
 	box-sizing: border-box;
 	background: rgba(0,0,0,.5);
 	transition: all 2s;
@@ -285,7 +301,7 @@ button>a:hover::after{
 	padding-top: 18px;
 	box-sizing: border-box;
 }
-.one-content .w-content button{
+.one-content .w-content .button11{
 	color: #fff;
 	font-size: 14px;
 	width: 9vw;
@@ -297,7 +313,7 @@ button>a:hover::after{
 	background: rgb(124, 78, 35);
 }
 
-.one-content .w-content button a i{
+.one-content .w-content .button11 a i{
 	font-size: 16px;
 	padding-left: 10px;
 	box-sizing: border-box;
@@ -324,6 +340,7 @@ button>a:hover::after{
 	min-width: 1220px;
 	height: 100%;
 	min-height: 650px;
+	z-index: -1;
 }
 .home .nav{
 	position: absolute;
@@ -456,7 +473,7 @@ button>a:hover::after{
 	animation: opacity 3s forwards;
 }
 
-.about>.img>.text button{
+.about>.img>.text .button11{
 	width: 10vw;
 	height: 4vw;
 	background: #7C4E23;
@@ -500,7 +517,7 @@ button>a:hover::after{
 	}
 }
 .oMenu{
-	animation: oMenu 2s linear;
+	animation: oMenu 1.5s linear;
 }
 .listMenu>ul{
 	display: flex;
@@ -551,7 +568,7 @@ button>a:hover::after{
 	display: inline-block;
 	width: 15vw;
 	margin: 0 auto;
-	transition: all .5s linear;
+	transition: all .5s .5s linear;
 }
 .big{
 	transform: scale(1.2);
@@ -598,7 +615,7 @@ button>a:hover::after{
 	font-size: 2vw;
 	color: #7C4E23;
 }
-.listMenu>ul>li>.list_none>div .none_bottom button{
+.listMenu>ul>li>.list_none>div .none_bottom .button11{
 	display: inline-block;
 	width: 7vw;
 	height: 3vw;
@@ -659,7 +676,7 @@ button>a:hover::after{
 	color: #999;
 	line-height: 1.4vw;
 }
-.News .content1 .news_content>.news-left>button{
+.News .content1 .news_content>.news-left>.button11{
 	display: inline-block;
 	width: 10vw;
 	height: 4vw;
@@ -682,7 +699,7 @@ button>a:hover::after{
 }
 .News .content1 .news_content>.news-right{
 	position: relative;
-	width: 45.6vw;
+	width: 46vw;
 	height: 50%;
 	padding-top: 3vh;
 	box-sizing: border-box;
@@ -708,9 +725,9 @@ button>a:hover::after{
 .News .content1 .news_content>.news-right>.mask{
 	position: absolute;
 	left: 0;
-	bottom: 0.5vh;
+	bottom: 0;
 	width: 100%;
-	height: 17vh;
+	height: 9vw;
 	border-radius: 10px;
 	padding: 0 1vw 3vh;
 	background: rgba(0,0,0,.5);
@@ -751,7 +768,7 @@ button>a:hover::after{
 	align-items: center;
 	width: 4.2vw;
 	height: 2.1vh;
-	margin-top: -15px;
+	margin-top: -20px;
 	padding: 0 1.4vw;
 	border: 1px solid #fff;
 	box-sizing: border-box;
@@ -906,7 +923,12 @@ button>a:hover::after{
 	position: fixed;
 	top: 33%;
 	right: 35px;
-	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 3vw;
+	height: 26vw;
 	transform: translateX(220%);
 	animation: right 1s 0.5s linear forwards;
 	z-index: 9;
