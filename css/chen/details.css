@@ -102,7 +102,7 @@ body {
 	height: 28vh;
 	background: rgba(0, 0, 0, .1);
 	position: absolute;
-	top: 22vh;
+	top: 33vh;
 	left: 12vw;
 	color: #fff;
 	padding: 2.7vh 19vw 1.6vh 3.6vw;
@@ -114,8 +114,11 @@ body {
 
 .banner>.text>h3 {
 	font-size: 3vw;
+	margin-bottom:1.5vh;
 }
-
+.banner>.text>span{
+	font-size:1vw;
+}
 /* banner结束 */
 /* 导航条开始 */
 .nav {
@@ -248,7 +251,9 @@ body {
 	color: #fff;
 	margin-top: 4.7vh;
 }
-
+.nav .content1>.left>.btn>a{
+	font-size:1vw;
+}
 .nav .content1>.right {
 	width: 46.8vw;
 	display: flex;
