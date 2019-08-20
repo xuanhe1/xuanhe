@@ -16,7 +16,7 @@ $.ajax({
 		for(var i = 0;i < list.length;i++){
 			$(
 				'<li>'+
-					'<a href="./pages/product.html">'+
+					'<a href="javascript:;">'+
 						'<div class="text">'+
 							'<h3>'+list[i].title+'</h3>'+
 							'<p>'+list[i].introduce+'</p>'+
