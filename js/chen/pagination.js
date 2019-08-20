@@ -34,7 +34,7 @@ var pagination = pagination || {};
         },
         bindEvent: function(){
             var that = this;
-			
+			$(that._wrapid).off("click")
 			
 			 //数据切换初始页
 			 $(".check-btn").on("click","li",function(){

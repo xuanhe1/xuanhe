@@ -230,7 +230,7 @@ body {
 
 .main>.check-content>div>ol>li>.bottom>.line {
 	width: 0.5vw;
-	height: 0.18vh;
+	height: 0.3vh;
 	margin: 0.5vh 0 2.3vh 1vw;
 	background: #7c4e23;
 	transition: 0.8s;
