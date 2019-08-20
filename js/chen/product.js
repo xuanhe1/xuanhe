@@ -22,7 +22,7 @@ $.ajax({
 	}
 })
 var attr=["f001","f002","f003","f004","f005"];
-var arr=['../img/chen/banner.png','../img/chen/banner.png','../img/chen/banner3.png','../img/chen/banner4.png','../img/chen/banner5.png']
+var arr=['../img/chen/1.jpg','../img/chen/2.jpg','../img/chen/3.jpg','../img/chen/4.jpg','../img/chen/5.jpg']
 			var arr2=['产品中心','乳胶制品','智能产品','保健产品','无纺布纸巾']
 
 // 切换内容数据引入
